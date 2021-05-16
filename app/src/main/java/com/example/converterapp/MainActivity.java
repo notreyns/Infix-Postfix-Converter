@@ -10,6 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import static com.example.converterapp.InfixToPostfix.infixToPostfix;
+import static com.example.converterapp.PostfixToInfix.postfixToInfix;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         if (item == "Infix to Postfix") {
             resultTextView.setText(infixToPostfix(inputTextView.getText().toString()));
         } else {
-            resultTextView.setText("bye " + item);
+            resultTextView.setText(postfixToInfix(inputTextView.getText().toString()));
         }
     }
 };

@@ -14,7 +14,7 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="60dp"
             />
         <EditText
             android:id="@+id/input_text_view"
