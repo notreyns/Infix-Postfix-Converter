@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
                 R.id.input_text_view);
         String item = spinner.getSelectedItem().toString();
         if (item == "Infix to Postfix") {
-            resultTextView.setText(infixToPostfix(inputTextView.getText().toString()));
+            resultTextView.setText("Result: \n"+infixToPostfix(inputTextView.getText().toString()));
         } else {
-            resultTextView.setText(postfixToInfix(inputTextView.getText().toString()));
+            resultTextView.setText("Result: \n"+postfixToInfix(inputTextView.getText().toString()));
         }
     }
 };
